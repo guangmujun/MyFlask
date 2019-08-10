@@ -1,0 +1,101 @@
+2018-08-03 12:16:24,651 ERROR :Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MTIsImV4cCI6MTUzMzI3NTYyOC4zMTU1ODV9.YW-Jm-kDvX3Md2XFNDvnr1RAYkLjANDKwldtT8_AmIo [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 164, in reset_password
+    user =User.verify_reset_password_token(token)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/models.py", line 81, in verify_reset_password_token
+    return user.query.get(id)
+NameError: global name 'user' is not defined
+2018-08-03 12:17:19,121 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 12:17:27,087 ERROR :Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MTIsImV4cCI6MTUzMzI3NTYyOC4zMTU1ODV9.YW-Jm-kDvX3Md2XFNDvnr1RAYkLjANDKwldtT8_AmIo [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 168, in reset_password
+    if form.validate_on_submit():
+TypeError: unbound method validate_on_submit() must be called with ResetPasswordForm instance as first argument (got nothing instead)
+2018-08-03 12:18:44,369 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 12:26:01,607 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 12:51:20,904 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 12:54:38,422 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 12:55:41,725 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 12:57:41,297 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 19:55:11,556 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:10:54,350 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:11:49,233 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:24:07,225 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:25:42,676 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:26:46,176 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:27:58,086 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 20:32:22,703 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:00:57,152 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:00:59,665 ERROR :Exception on /login [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 67, in login
+    return render_template('login.html' , title = 'Sign In' , form =form )
+  File "/usr/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/usr/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/templates/base.html", line 62, in template
+    {% block navbar %}
+TemplateAssertionError: block 'navbar' defined twice
+2018-08-03 21:02:16,516 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:04:01,158 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:05:57,917 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:09:38,801 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:10:30,563 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:12:10,424 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:12:38,762 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:13:23,859 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:21:10,841 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:25:14,151 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:28:51,058 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:29:44,679 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:30:13,873 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:30:34,827 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:31:31,645 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:32:20,117 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:33:22,095 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:36:50,044 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:39:40,531 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:41:01,649 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:43:18,928 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:45:03,811 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:47:32,232 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 21:48:51,722 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-14 08:04:02,889 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-14 10:03:53,189 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-20 08:19:08,007 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-20 08:21:22,126 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 

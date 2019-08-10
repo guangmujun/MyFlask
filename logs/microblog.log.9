@@ -1,0 +1,129 @@
+2018-08-02 10:09:57,144 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:10:00,847 ERROR :Exception on /index [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 24, in index
+    return render_template('index.html' , title = 'Home' ,  form =form ,posts = posts.item)
+AttributeError: 'Pagination' object has no attribute 'item'
+2018-08-02 10:10:50,852 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:39:56,907 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:40:00,655 ERROR :Exception on /index [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 34, in index
+    prev_url = prev_url)#paginate()方法支持分页，三个参数：1.开始的页码2.每页的数据量3.错误布尔标记。items属性的返回的数据内容列表
+UnboundLocalError: local variable 'prev_url' referenced before assignment
+2018-08-02 10:42:33,432 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:42:36,994 ERROR :Exception on /index [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 34, in index
+    prev_url = prev_url)
+UnboundLocalError: local variable 'prev_url' referenced before assignment
+2018-08-02 10:45:30,458 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:45:33,541 ERROR :Exception on /index [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 33, in index
+    posts = posts.items , next_url = next_url ,prev_url = prev_url)
+UnboundLocalError: local variable 'prev_url' referenced before assignment
+2018-08-02 10:45:47,715 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:45:50,618 ERROR :Exception on /index [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 33, in index
+    posts = posts.items , next_url = next_url ,prev_url = prev_url)
+UnboundLocalError: local variable 'prev_url' referenced before assignment
+2018-08-02 10:48:51,395 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:48:55,934 ERROR :Exception on /explore [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 51, in explore
+    next_url = next_url ,prev_url = prev_url)
+UnboundLocalError: local variable 'prev_url' referenced before assignment
+2018-08-02 10:49:00,880 ERROR :Exception on /index [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 34, in index
+    prev_url = prev_url)
+UnboundLocalError: local variable 'prev_url' referenced before assignment
+2018-08-02 10:50:27,719 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:50:48,657 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 
+2018-08-02 10:51:07,484 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :30 ] 

@@ -1,0 +1,149 @@
+2018-08-03 11:03:42,910 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 10, in send_mail
+    mail.send(msg)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/lib64/python2.7/smtplib.py", line 735, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+SMTPSenderRefused: (530, '5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError i13-v6sm3304962pgo.75 - gsmtp', u'yuhangwang18@gmail.com')
+2018-08-03 11:05:09,798 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 10, in send_mail
+    mail.send(msg)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/lib64/python2.7/smtplib.py", line 735, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+SMTPSenderRefused: (530, '5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError 21-v6sm4861964pgx.20 - gsmtp', u'yuhangwang18@gmail.com')
+2018-08-03 11:18:50,281 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 10, in send_mail
+    mail.send(msg)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib64/python2.7/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 315, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 290, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 101] Network is unreachable
+2018-08-03 11:19:27,766 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 10, in send_mail
+    mail.send(msg)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib64/python2.7/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 315, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 290, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 101] Network is unreachable
+2018-08-03 11:20:08,612 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 11:20:26,853 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 10, in send_mail
+    mail.send(msg)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/lib64/python2.7/smtplib.py", line 735, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+SMTPSenderRefused: (530, '5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError d13-v6sm2983789pgq.42 - gsmtp', u'yuhangwang18@gmail.com')
+2018-08-03 11:23:54,502 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 

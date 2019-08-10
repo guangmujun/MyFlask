@@ -1,0 +1,78 @@
+<meta charset="utf-8">
+{%  extends 'bootstrap/base.html' %}
+
+{%  block title %}
+	{% if title %}
+		{{ title }} - Microblog
+	{% else %}
+		Welcome to Microblog
+	{% endif %}
+{%  endblock %}
+
+{%  block navbar %}
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+                    			<span class="icon-bar"></span>
+                   			<span class="icon-bar"></span>
+                   			<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="{{  url_for('index') }}">Microblog</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                			<ul class="nav navbar-nav">
+                    			<li><a href="{{ url_for('index') }}">Home</a></li>
+                    			<li><a href="{{ url_for('explore') }}">Explore</a></li>
+                			</ul>
+                			<ul class="nav navbar-nav navbar-right">
+                    			{% if current_user.is_anonymous %}
+                    				<li><a href="{{ url_for('login') }}">Login</a></li>
+                    			{% else %}
+                    				<li><a href="{{ url_for('user', username=current_user.username) }}">Profile</a></li>
+                    				<li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    			{% endif %}
+                			</ul>
+            		</div>
+		</div>
+	</nav>
+{%  endblock %}
+	
+{%  block content %}
+	<div class="container">
+		{% with messages = get_flashed_messages() %}		<!-- with是赋值语句，将get_flashed_messages()的值赋给messages -->
+		{% if messages %}								<!-- 将flash的提示信息渲染出来 -->
+			{% for message in messages %}
+			<div class="alert alert-info" role="alert">{{ message }}</div>
+			{% endfor %}
+		{% endif %}
+		{% endwith %}
+      		 
+      		 {# application content needs to be provided in the app_content block #}
+        		{% block app_content %}{% endblock %}
+	</div>
+	
+	<footer class="footer navbar-fixed-bottom "><!-- 底部备案信息 -->
+    		<div class="container">
+    			<p class="navbar-text"><a href="http://www.miitbeian.gov.cn">苏ICP备17035840号</a></p>
+    		</div>
+	</footer>
+
+{%  endblock %}
+	
+{%  block scripts %}<!-- Flask-Moment与moment.js一起工作，因此应用的所有模板都必须包含moment.js。 -->
+	{{  super() }}
+	{{  moment.include_moment() }}
+{%  endblock %}
+
+<!-- <nav class="navbar navbar-default navbar-fixed-bottom">
+  		<div class="container">
+  			<p class="navbar-text">Signed in as Mark Otto</p>
+  		</div>
+	</nav> -->
+
+
+
+
+

@@ -1,0 +1,130 @@
+2018-08-02 16:38:15,623 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :32 ] 
+2018-08-02 16:40:54,337 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :32 ] 
+2018-08-02 16:54:06,267 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :32 ] 
+2018-08-02 17:00:29,451 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :32 ] 
+2018-08-02 17:01:13,474 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :32 ] 
+2018-08-02 17:01:53,413 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :32 ] 
+2018-08-02 17:39:30,976 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :34 ] 
+2018-08-02 17:39:36,238 ERROR :Exception on /user/test4 [GET] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 99, in user
+    next_url = next_url , prev_url = prev_url )
+  File "/usr/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/templates/user.html", line 42, in template
+    {% endblock %}
+TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2018-08-02 17:40:54,549 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :34 ] 
+2018-08-02 17:45:00,215 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :34 ] 
+2018-08-02 17:49:27,003 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :34 ] 
+2018-08-02 17:53:57,157 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :34 ] 
+2018-08-03 09:05:02,391 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 09:53:11,385 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 10:44:53,251 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 10:45:24,950 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 10:51:32,705 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email()
+TypeError: send_password_reset_email() takes exactly 1 argument (0 given)
+2018-08-03 10:53:11,359 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 10:53:17,671 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/usr/lib/python2.7/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/usr/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/templates/email/reset_password.html", line 8, in template
+    <p>{{ url_for('reset_password')  , token =token ,_external = True  }}</p>
+TemplateSyntaxError: expected token 'end of print statement', got '='
+2018-08-03 10:54:02,835 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
+2018-08-03 10:54:07,118 ERROR :Exception on /reset_password_request [POST] [in /usr/lib/python2.7/site-packages/flask/app.py :1560 ] 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 20, in send_password_reset_email
+    user = user ,token = token))
+  File "/home/aaron/MyPython/MyFlask/microblog/app/email.py", line 10, in send_mail
+    mail.send(msg)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/usr/lib/python2.7/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/usr/lib64/python2.7/smtplib.py", line 767, in quit
+    res = self.docmd("quit")
+  File "/usr/lib64/python2.7/smtplib.py", line 392, in docmd
+    self.putcmd(cmd, args)
+  File "/usr/lib64/python2.7/smtplib.py", line 340, in putcmd
+    self.send(str)
+  File "/usr/lib64/python2.7/smtplib.py", line 332, in send
+    raise SMTPServerDisconnected('please run connect() first')
+SMTPServerDisconnected: please run connect() first
+2018-08-03 11:03:24,124 INFO :Microblog startup ---- Guang Mujun [in /home/aaron/MyPython/MyFlask/microblog/app/__init__.py :36 ] 
